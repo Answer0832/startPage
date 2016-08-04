@@ -1,0 +1,94 @@
+html {
+  font-family: Hack;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-image: url("Forest.jpg");
+}
+::selection {
+  background: transparent; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: transparent; /* Gecko Browsers */
+}
+
+#txt {
+  color: #dd1734;
+  text-align: center;
+  font-size: 90px;
+  position: relative;
+  top: 25%;
+}
+#date {
+  color: #335570;
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  top: 28%;
+}
+
+#arrow1 {
+  color: #dd1734;
+  font-size: 50px;
+  position: absolute;
+  top: -90%;
+  left: -3%;
+}
+#arrow2 {
+  color: #335570;
+  font-size: 50px;
+  position: absolute;
+  top: -40%;
+  left: -3%;
+}
+.red {
+  text-shadow: 0 0 0 #dd1734;
+  border-left: 1px #dd1734 solid;
+}
+.blue{
+  margin-top: 5px;
+  text-shadow: 0 0 0 #335570;
+  border-left: 1px #335570 solid;
+}
+
+#terminal {
+  height: 60%;
+  width: 70%;
+  min-height: 500px;
+  min-width: 1150px;
+  background: #1a1a1a;
+  margin: auto;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  border: 3px solid white;
+}
+#inputs {
+  position: relative;
+  top: 45%;
+  left: 27.5%;
+}
+input {
+  background-color: transparent;
+  font-size: 25px;
+  border: none;
+  color: transparent;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
